@@ -1,0 +1,35 @@
+{
+    "os": "Linux-5.8.0-36-generic-x86_64-with-glibc2.10",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-01-09T23:30:32.529061",
+    "startedAt": "2021-01-09T23:30:31.764333",
+    "docker": null,
+    "gpu": "GeForce GTX 1050 Ti",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "--img",
+        "640",
+        "--batch",
+        "1",
+        "--epochs",
+        "2",
+        "--data",
+        "./data/coco128.yaml",
+        "--weights",
+        "best.pt"
+    ],
+    "state": "running",
+    "codePath": "train.py",
+    "program": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5",
+        "commit": "3e25f1e9e52069189fb140d50c09dddb5be3cff0"
+    },
+    "email": null,
+    "root": "/home/ashraf/yolov5",
+    "host": "Ashraful",
+    "username": "ashraf",
+    "executable": "/home/ashraf/anaconda3/bin/python"
+}

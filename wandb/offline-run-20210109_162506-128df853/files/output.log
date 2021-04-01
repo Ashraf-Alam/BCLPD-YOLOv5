@@ -1,0 +1,56 @@
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:00<?, ?it/s]Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:00<?, ?it/s]
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:00<?, ?it/s]Plotting labels... 
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:00<?, ?it/s]
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:01<?, ?it/s]
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:01<?, ?it/s]
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:01<?, ?it/s]
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:01<?, ?it/s]
+NumExpr defaulting to 4 threads.
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:04<?, ?it/s]
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:04<?, ?it/s]
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:04<?, ?it/s]
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:04<?, ?it/s]
+Images sizes do not match. This will causes images to be display incorrectly in the UI.
+
+Analyzing anchors... anchors/target = 5.63, Best Possible Recall (BPR) = 1.0000
+Image sizes 1280 train, 1280 test
+Using 4 dataloader workers
+Logging results to runs/train/exp10
+Starting training for 2 epochs...
+
+     Epoch   gpu_mem       box       obj       cls     total   targets  img_size
+  0%|                                                                                                                                                                               | 0/7 [00:00<?, ?it/s]  0%|                                                                                                                                                                               | 0/7 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 520, in <module>
+    train(hyp, opt, device, tb_writer, wandb)
+  File "train.py", line 292, in train
+    pred = model(imgs)  # forward
+  File "/home/ashraf/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/ashraf/yolov5/models/yolo.py", line 119, in forward
+    return self.forward_once(x, profile)  # single-scale inference, train
+  File "/home/ashraf/yolov5/models/yolo.py", line 135, in forward_once
+    x = m(x)  # run
+  File "/home/ashraf/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/ashraf/yolov5/models/common.py", line 86, in forward
+    return self.cv3(torch.cat((self.m(self.cv1(x)), self.cv2(x)), dim=1))
+  File "/home/ashraf/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/ashraf/anaconda3/lib/python3.8/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/home/ashraf/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/ashraf/yolov5/models/common.py", line 52, in forward
+    return x + self.cv2(self.cv1(x)) if self.add else self.cv2(self.cv1(x))
+  File "/home/ashraf/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/ashraf/yolov5/models/common.py", line 36, in forward
+    return self.act(self.bn(self.conv(x)))
+  File "/home/ashraf/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/ashraf/anaconda3/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 423, in forward
+    return self._conv_forward(input, self.weight)
+  File "/home/ashraf/anaconda3/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 419, in _conv_forward
+    return F.conv2d(input, weight, self.bias, self.stride,
+RuntimeError: CUDA out of memory. Tried to allocate 100.00 MiB (GPU 0; 3.94 GiB total capacity; 2.86 GiB already allocated; 108.56 MiB free; 2.93 GiB reserved in total by PyTorch)

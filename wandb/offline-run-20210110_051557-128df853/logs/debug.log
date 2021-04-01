@@ -1,0 +1,46 @@
+2021-01-10 05:15:57,457 INFO    MainThread:13318 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-10 05:15:57,458 INFO    MainThread:13318 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-01-10 05:15:57,458 INFO    MainThread:13318 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-10 05:15:57,458 INFO    MainThread:13318 [wandb_setup.py:_flush():70] setting login settings: {'mode': 'offline'}
+2021-01-10 05:15:57,459 INFO    MainThread:13318 [wandb_init.py:_log_setup():303] Logging user logs to /home/ashraf/yolov5/wandb/offline-run-20210110_051557-128df853/logs/debug.log
+2021-01-10 05:15:57,459 INFO    MainThread:13318 [wandb_init.py:_log_setup():304] Logging internal logs to /home/ashraf/yolov5/wandb/offline-run-20210110_051557-128df853/logs/debug-internal.log
+2021-01-10 05:15:58,523 INFO    MainThread:13318 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-10 05:15:58,523 INFO    MainThread:13318 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.REDIRECT
+2021-01-10 05:15:58,524 INFO    MainThread:13318 [wandb_run.py:_redirect():1107] Redirecting console.
+2021-01-10 05:15:58,524 INFO    MainThread:13318 [redirect.py:install():204] install start
+2021-01-10 05:15:58,524 INFO    MainThread:13318 [redirect.py:install():219] install stop
+2021-01-10 05:15:58,524 INFO    MainThread:13318 [redirect.py:install():204] install start
+2021-01-10 05:15:58,525 INFO    MainThread:13318 [redirect.py:install():219] install stop
+2021-01-10 05:15:58,525 INFO    MainThread:13318 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-01-10 05:16:02,875 INFO    MainThread:13318 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 1
+2021-01-10 05:16:02,876 INFO    MainThread:13318 [wandb_run.py:_restore():1179] restore
+2021-01-10 05:16:02,876 INFO    MainThread:13318 [redirect.py:uninstall():223] uninstall start
+2021-01-10 05:16:02,876 INFO    MainThread:13318 [redirect.py:_stop():278] _stop: stdout
+2021-01-10 05:16:02,877 INFO    stdout    :13318 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2021-01-10 05:16:02,877 INFO    stdout    :13318 [redirect.py:_pipe_relay():136] relay done done: stdout
+2021-01-10 05:16:02,877 INFO    MainThread:13318 [redirect.py:_stop():284] _stop closed: stdout
+2021-01-10 05:16:02,877 INFO    MainThread:13318 [redirect.py:_stop():290] _stop joined: stdout
+2021-01-10 05:16:02,877 INFO    MainThread:13318 [redirect.py:_stop():292] _stop rd closed: stdout
+2021-01-10 05:16:02,877 INFO    MainThread:13318 [redirect.py:uninstall():227] uninstall done
+2021-01-10 05:16:02,877 INFO    MainThread:13318 [redirect.py:uninstall():223] uninstall start
+2021-01-10 05:16:02,878 INFO    MainThread:13318 [redirect.py:_stop():278] _stop: stderr
+2021-01-10 05:16:02,878 INFO    MainThread:13318 [redirect.py:_stop():284] _stop closed: stderr
+2021-01-10 05:16:02,878 INFO    stderr    :13318 [redirect.py:_pipe_relay():120] relay done saw last write: stderr
+2021-01-10 05:16:02,878 INFO    stderr    :13318 [redirect.py:_pipe_relay():136] relay done done: stderr
+2021-01-10 05:16:02,878 INFO    MainThread:13318 [redirect.py:_stop():290] _stop joined: stderr
+2021-01-10 05:16:02,878 INFO    MainThread:13318 [redirect.py:_stop():292] _stop rd closed: stderr
+2021-01-10 05:16:02,878 INFO    MainThread:13318 [redirect.py:uninstall():227] uninstall done
+2021-01-10 05:16:02,881 INFO    MainThread:13318 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "443ad8bc65364aa4a303c55c6d3cf510"
+
+2021-01-10 05:16:04,886 INFO    MainThread:13318 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "8c009deba3354887aa0b75370ae43bf1"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+  }
+}
+
+2021-01-10 05:16:05,967 INFO    MainThread:13318 [wandb_run.py:_show_summary():1469] rendering summary
+2021-01-10 05:16:05,968 INFO    MainThread:13318 [wandb_run.py:_show_history():1507] rendering history
+2021-01-10 05:16:05,968 INFO    MainThread:13318 [internal.py:handle_exit():138] Internal process exited

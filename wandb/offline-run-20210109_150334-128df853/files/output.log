@@ -1,0 +1,27 @@
+WARNING: --img-size 720 must be multiple of max stride 32, updating to 736
+WARNING: --img-size 720 must be multiple of max stride 32, updating to 736
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:00<?, ?it/s]
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:00<?, ?it/s][APlotting labels... 
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:00<?, ?it/s]
+Scanning '../coco128/labels/train2017.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|█████████████████████████████████████████████████████████| 100/100 [00:00<?, ?it/s]
+NumExpr defaulting to 4 threads.
+Images sizes do not match. This will causes images to be display incorrectly in the UI.
+
+Analyzing anchors... anchors/target = 5.54, Best Possible Recall (BPR) = 1.0000
+Image sizes 736 train, 736 test
+Using 0 dataloader workers
+Logging results to runs/train/exp6
+Starting training for 2 epochs...
+
+     Epoch   gpu_mem       box       obj       cls     total   targets  img_size
+  0%|                                                                                                                                                                             | 0/100 [00:00<?, ?it/s]  0%|                                                                                                                                                                             | 0/100 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 520, in <module>
+    train(hyp, opt, device, tb_writer, wandb)
+  File "train.py", line 300, in train
+    scaler.scale(loss).backward()
+  File "/home/ashraf/anaconda3/lib/python3.8/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/home/ashraf/anaconda3/lib/python3.8/site-packages/torch/autograd/__init__.py", line 130, in backward
+    Variable._execution_engine.run_backward(
+RuntimeError: CUDA out of memory. Tried to allocate 2.07 GiB (GPU 0; 3.94 GiB total capacity; 301.91 MiB already allocated; 2.08 GiB free; 992.00 MiB reserved in total by PyTorch)
