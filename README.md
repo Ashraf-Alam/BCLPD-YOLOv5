@@ -45,23 +45,6 @@ Python 3.8 or later with all [requirements.txt](https://github.com/ultralytics/y
 $ pip install -r requirements.txt
 ```
 
-
-## Tutorials
-
-* [Train Custom Data](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data)&nbsp; 🚀 RECOMMENDED
-* [Weights & Biases Logging](https://github.com/ultralytics/yolov5/issues/1289)&nbsp; 🌟 NEW
-* [Supervisely Ecosystem](https://github.com/ultralytics/yolov5/issues/2518)&nbsp; 🌟 NEW
-* [Multi-GPU Training](https://github.com/ultralytics/yolov5/issues/475)
-* [PyTorch Hub](https://github.com/ultralytics/yolov5/issues/36)&nbsp; ⭐ NEW
-* [ONNX and TorchScript Export](https://github.com/ultralytics/yolov5/issues/251)
-* [Test-Time Augmentation (TTA)](https://github.com/ultralytics/yolov5/issues/303)
-* [Model Ensembling](https://github.com/ultralytics/yolov5/issues/318)
-* [Model Pruning/Sparsity](https://github.com/ultralytics/yolov5/issues/304)
-* [Hyperparameter Evolution](https://github.com/ultralytics/yolov5/issues/607)
-* [Transfer Learning with Frozen Layers](https://github.com/ultralytics/yolov5/issues/1314)&nbsp; ⭐ NEW
-* [TensorRT Deployment](https://github.com/wang-xinyu/tensorrtx)
-
-
 ## Environments
 
 YOLOv5 may be run in any of the following up-to-date verified environments (with all dependencies including [CUDA](https://developer.nvidia.com/cuda)/[CUDNN](https://developer.nvidia.com/cudnn), [Python](https://www.python.org/) and [PyTorch](https://pytorch.org/) preinstalled):
