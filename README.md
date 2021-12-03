@@ -1,9 +1,9 @@
-#Bangladeshi Car License Plate Detection using YOLOv5
+# Bangladeshi Car License Plate Detection using YOLOv5
 
-##Sample Result
+## Sample Result
 <img src="runs/detect/exp15/778.JPG" width="1000"></a>
 
-##Sample Result
+## Sample Result
 <img src="runs/detect/exp15/723.JPG" alt="CI CPU testing"></a>
 
 
